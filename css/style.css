@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  "Fjalla One", sans-serif;
+}
+
+.header-p {
+    background-color: #eff6fa;
+    padding: 10px 15%; /* Aumenté el padding para un mejor espacio */
+    display: grid;
+    grid-template-columns: auto 1fr; /* El logo ocupa el ancho necesario y el resto se distribuye */
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-p .logoheader { 
+    cursor: pointer;
+}
+
+.header-p .logoheader img {
+    margin-right: 90px ;
+    height: 70px;
+    transition: all 0.3s;
+}
+
+.header-p .logoheader img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+}
+
+.search {
+    margin-bottom: 20px; 
+}
+
+.nav-linkp {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-linkp li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.nav-linkp li:not(:last-child) {
+    margin-right: 250px; 
+    
+}
+.nav-linkp a{
+    text-decoration: none;
+    color: #254361d3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input{
+    width: 650px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+button{
+    background-color: #52bdd8;
+    padding: 10px 15px;
+    position: absolute;
+    border: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9be1e4;
+}
+
+.container-p{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:#52bdd8d3;
+}
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text-p{
+    width: 100%;
+    height: 150px;
+}
+.text-p h1{
+    font-size: 55px;
+    color:  #254361d3;
+}
+
+.image_cover {
+    position: relative; 
+    width: 100%;
+}
+
+.image_cover img {
+    width: 500px;
+    display: block; 
+    margin-left: 80px;
+    border-radius: 50px;
+    -webkit-box-shadow: -4px 3px 54px 0px rgba(135,192,230,1);
+    -moz-box-shadow: -4px 3px 54px 0px rgba(135,192,230,1);
+    box-shadow: -4px 3px 54px 0px rgba(135,192,230,1);
+}
+
+.image_cover button {
+    position: absolute; 
+    width: 100px;
+    height: 50px;
+    bottom: 30px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background:  #a1f1f150; 
+    color: #254361d3; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-left: 45px;
+    font-size: 15px;
+    border: 3px solid;
+}
+
+.container__box-cardPrimary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary {
+    max-width: 300px; 
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 20px;
+    transition: all 0.3s;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    -webkit-box-shadow: -2px 2px 25px 7px rgba(109,164,232,1);
+    -moz-box-shadow: -2px 2px 25px 7px rgba(109,164,232,1);
+    box-shadow: -2px 2px 25px 7px rgba(109,164,232,1);
+}
+
+.box__card-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.box__card-primary img {
+    width: 100%; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+.box__card-primary i{
+    margin-left: 135px;
+    cursor: pointer;
+}
+.card-text {
+    text-align: center; 
+    font-size: 30px; 
+    color: #254361d3;
+    
+}
+.text_se{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text_se h1{
+    font-size: 30px;
+    color: #254361d3;;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #52bdd8d3;
+    padding: 100px 0; /* Agrega espacio arriba y abajo */
+}
+
+.column {
+    flex-grow: 1;
+    margin: 0 50px; /* Ajusta el margen entre las columnas */
+}
+
+.menu, .social-icon {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-elem {
+    margin-bottom: 10px; /* Agrega separación entre elementos de menú */
+}
+
+.menu-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em; /* Tamaño del texto aumentado */
+}
+
+.icon-elem {
+    margin-right: 10px;
+}
+
+.text_f {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Agrega separación entre elementos de texto */
+    font-size: 1.2em; /* Tamaño del texto aumentado */
+}
+
+a {
+    text-decoration: none; /* Quita la decoración de los enlaces */
+}
+
+.social-icon {
+    display: flex; /* Alinea los iconos de las redes sociales en una fila */
+}
+
+.icon-elem {
+    margin-right: 10px;
+}
+.fa-facebook-f{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.fa-instagram{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.fa-x-twitter{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.fa-whatsapp{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin: 20px;
+}
