@@ -9,11 +9,10 @@
 
 .header-p {
     background-color: #eff6fa;
-    padding: 10px 15%; /* Aumenté el padding para un mejor espacio */
+    padding: 10px 15%;
     display: grid;
-    grid-template-columns: auto 1fr; /* El logo ocupa el ancho necesario y el resto se distribuye */
+    grid-template-columns: auto 1fr; 
     align-items: center;
-    position: fixed;
     z-index: 100;
 }
 
@@ -35,6 +34,12 @@
     display: flex;
     flex-direction: column;
     margin-left: auto; 
+}
+.container-p {
+    padding-left: 80px; 
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: #52bdd8d3;
 }
 
 .search {
@@ -122,7 +127,10 @@ button:hover{
     -moz-box-shadow: -4px 3px 54px 0px rgba(135,192,230,1);
     box-shadow: -4px 3px 54px 0px rgba(135,192,230,1);
 }
-
+.image_cover button:hover{
+    transform: translateY(-2px).4s ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .image_cover button {
     position: absolute; 
     width: 100px;
@@ -183,25 +191,113 @@ button:hover{
     color: #254361d3;
     
 }
+.tittle-cards {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0; 
+    background-color: #52bdd8d3;
+}
+
+
+.tittle-cards p{
+    font-size: 30px;
+    color: #f6f7f8d3;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.tittle-cards h1{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.container-card {
+    width: 100%;
+    max-width: 100%; /* Cambiado a 100% */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #52bdd8;
+}
+
+
+.container-card {
+    width: 100%;
+    max-width: 100%; /* Cambiado a 100% */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #52bdd8d3;
+}
+
+.card-person {
+    width: calc(18% - 20px); /* Ancho de las tarjetas */
+    margin: 20px; /* Margen entre las tarjetas */
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-person img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-person .content-person {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-person .content-person p {
+    line-height: 1.5;
+}
+
+.card-person .content-person h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.card-person .content-person a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
 .text_se{
     text-align: center;
     margin-top: 50px;
 }
 
 .text_se h1{
-    font-size: 30px;
-    color: #254361d3;;
+    font-size: 40px;
+    color: #356aa0d3;;
+    margin-bottom: 50px;
 }
 .footer {
     display: flex;
     justify-content: space-between;
     background-color: #52bdd8d3;
-    padding: 100px 0; /* Agrega espacio arriba y abajo */
+    padding: 100px 0; 
 }
 
 .column {
     flex-grow: 1;
-    margin: 0 50px; /* Ajusta el margen entre las columnas */
+    margin: 0 50px; 
 }
 
 .menu, .social-icon {
@@ -210,13 +306,12 @@ button:hover{
 }
 
 .menu-elem {
-    margin-bottom: 10px; /* Agrega separación entre elementos de menú */
+    margin-bottom: 10px;
 }
-
 .menu-icon {
     text-decoration: none;
     color: #333;
-    font-size: 1.2em; /* Tamaño del texto aumentado */
+    font-size: 1.2em; 
 }
 
 .icon-elem {
@@ -225,16 +320,16 @@ button:hover{
 
 .text_f {
     margin-top: 10px;
-    margin-bottom: 10px; /* Agrega separación entre elementos de texto */
-    font-size: 1.2em; /* Tamaño del texto aumentado */
+    margin-bottom: 10px; 
+    font-size: 1.2em; 
 }
 
 a {
-    text-decoration: none; /* Quita la decoración de los enlaces */
+    text-decoration: none; 
 }
 
 .social-icon {
-    display: flex; /* Alinea los iconos de las redes sociales en una fila */
+    display: flex; 
 }
 
 .icon-elem {
